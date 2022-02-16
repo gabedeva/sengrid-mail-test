@@ -35,8 +35,8 @@ app.post('/api/email', (req, res, next) => {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
     const msg = {
-        to: "obasco4@gmail.com", // Change to your recipient
-        from: "hello@triocephkiddies.com",  // Change to your verified sender
+        to: "test@gmail.com", // Change to your recipient
+        from: "hello@yourdomain.com",  // Change to your verified sender
         subject: "Website Contact",
         text: req.body.name.concat(req.body.message)
     }
